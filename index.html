@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spice Haven - Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            Restaurant
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#booking">Book Table</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Delicious Food, Memorable Moments</h1>
+
+            <p>
+                Experience delicious dishes, warm hospitality
+                and a perfect dining experience.
+            </p>
+
+            <a href="#booking" class="hero-btn">
+                Book a Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="section" id="menu">
+
+        <h2>Our Menu</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <div class="food-icon">🍕</div>
+                <h3>Margherita Pizza</h3>
+                <p>Fresh tomato, mozzarella and basil.</p>
+                <h4>₹299</h4>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🍔</div>
+                <h3>Classic Burger</h3>
+                <p>Juicy patty with fresh vegetables and cheese.</p>
+                <h4>₹249</h4>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🍝</div>
+                <h3>Italian Pasta</h3>
+                <p>Creamy pasta prepared with fresh ingredients.</p>
+                <h4>₹279</h4>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🍛</div>
+                <h3>Paneer Biryani</h3>
+                <p>Fragrant rice with delicious paneer and spices.</p>
+                <h4>₹329</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div>🍽️</div>
+                <h3>Dine-In</h3>
+                <p>Enjoy a comfortable dining experience.</p>
+            </div>
+
+            <div class="service-card">
+                <div>🥡</div>
+                <h3>Takeaway</h3>
+                <p>Order your favourite food for takeaway.</p>
+            </div>
+
+            <div class="service-card">
+                <div>🚚</div>
+                <h3>Food Delivery</h3>
+                <p>Get delicious food delivered to your door.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+
+        <h2>Food Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">🍕</div>
+            <div class="gallery-item">🍔</div>
+            <div class="gallery-item">🍝</div>
+            <div class="gallery-item">🍛</div>
+            <div class="gallery-item">🥗</div>
+            <div class="gallery-item">🍰</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+
+        <h2>Book a Table</h2>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="date"
+                id="bookingDate"
+                required>
+
+            <input
+                type="time"
+                id="bookingTime"
+                required>
+
+            <select id="guests" required>
+                <option value="">Number of Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+            </select>
+
+            <button type="submit">
+                Book Now
+            </button>
+
+        </form>
+
+        <p id="bookingMessage"></p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Main Road, Mumbai, Maharashtra</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 info@spicehaven.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Spice Haven. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
